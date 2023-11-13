@@ -12,7 +12,7 @@ INSTALACION BACKEND
 
 Pasos Para subir la base de Datos
 
-1. Crear Base de datos con el nombre "pruebas_innclod",
+1. Crear Base de datos con el nombre "prueba_innclod",
 
 2. Si desea cambiar el nombre de la base de datos por otro o cualquier otro valor de configuracion, debera modificar el archivo .env que está alojado en la raiz del folder "backend"
 
