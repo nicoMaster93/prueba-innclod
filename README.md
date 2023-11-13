@@ -6,7 +6,7 @@ INSTALACION PROYECTO
 
 1.  git clone -b develop [url_repositorio] [NOMBRE_FOLDER]
 
-2.  Segun la configuracion de su máquina se recomienda dar permisos de escritura al folder del backend ya que así se puede tener el control de los logs
+2.  git clone -b develop https://github.com/nicoMaster93/prueba-innclod.git ./prueba-innclod
 
 INSTALACION BACKEND
 
