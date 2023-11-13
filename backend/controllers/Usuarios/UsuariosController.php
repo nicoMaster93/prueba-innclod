@@ -55,7 +55,7 @@
                         $data = $this->model->getDataTable($tabla,$condicion);
                         if(count($data)>0){
                             $data[0]["modules"][] = [
-                                "icon" => "fa fa-file-o",
+                                "icon" => "fa fa-file",
                                 "view" => "Documentos/Documentos",
                                 "name" => "Mis Documentos"
                             ];

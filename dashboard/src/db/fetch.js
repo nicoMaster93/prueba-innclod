@@ -11,7 +11,6 @@ const rest = class service {
         if(json){
             this.myHeaders.append("Content-Type", "application/json");
         }
-        console.log(this.myHeaders)
         var requestOptions = {
             method: method,
             headers: this.myHeaders,

@@ -4,7 +4,7 @@ import { loader, message } from "../../utilities/utilities.js"
 const Dashboard = () => {
   
   const ini = async () => {
-    console.log("LOAD Dashboard")
+    // console.log("LOAD Dashboard")
     const modules = (new db).getStorage(config.keySessionModules, true)
     modules.map((k) => {
       $(`#listpanel`).append(optionMenu(k))
@@ -38,7 +38,7 @@ const Dashboard = () => {
   const infoUser = () => {
     const ss = (new db).getStorage(config.keySession, true)
     const htmlInfo = `<div>
-      <span> ${ss.NOMBRE_COMPLETO} </span> 
+      <span><i class="fa fa-user-circle" aria-hidden="true"></i> ${ss.NOMBRE_COMPLETO} </span> 
       |
       <a id="btnCloseSesion" ><i class="fas fa-sign-out-alt"></i> Cerrar Sesion</a>
     </div>`;

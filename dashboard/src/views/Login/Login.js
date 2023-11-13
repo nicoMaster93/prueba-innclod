@@ -3,7 +3,7 @@ import {config, db, rest } from "../../db/index.js"
 const Login = () => {
   
   const ini = async () => {
-    console.log("LOAD LOGIN")
+    // console.log("LOAD LOGIN")
     console.log("Login", config )
 
     $(`#formLogin`).submit(async function(e){
