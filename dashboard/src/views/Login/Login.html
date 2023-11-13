@@ -1,0 +1,83 @@
+<div class="bodyLogin">
+	<div class="containerDashboard" style="opacity: 1">
+		<div id="cajaLogin"  >
+			<div class = "container-fluid">
+				<section class="row  headerLogin">
+					<article class="col-xs-12">
+						<img src="resources/img/iconostema/logo.png">
+					</article>
+				</section>
+				<form method="post"  name="formLogin" id="formLogin" autocomplete="off" enctype="multipart/form-data" >
+					<section class="row mT-lg">
+						<article class="col-xs-8 col-xs-offset-2">
+							<label class="fo" for="usr">Usuario</label>
+							<div class="input-group">
+							  <span class="input-group-addon" ><i class="fas fa-user"></i></span>
+							  <input type="text" class="form-control" placeholder="Usuario" id="usr" name="usr" autocomplete="off">
+							</div>
+						</article>
+					</section>
+					<section class="row mT-sm">
+						<article class="col-xs-8 col-xs-offset-2">
+							 <label class="fo" for="pwd">Contraseña</label>
+							<div class="input-group">
+							  <span class="input-group-addon" ><i class="fas fa-unlock-alt"></i></span>
+							  <input type="password" class="form-control" placeholder="Contraseña" id="pwd" name="pwd" autocomplete="off">
+							</div>
+						</article>
+					</section>
+					<section class="row mT-md mB-lg">
+						<article class="col-xs-12 text-center">
+							<p id="msjError" class="text-error h5"></p>
+							<button type="submit" class="btn btn-primary mT-md" id="login" >
+								Ingresar <i class="fas fa-arrow-circle-right"></i>
+							</button>
+						</article>
+					</section>
+				</form>
+			</div>
+			<!-- <a href="javascript:;" class="btnForgetPwd" id="forget" >Olvido su contraseña? Recupera</a> -->
+		</div>
+		<div id="cajaForgetPwd" class="off" >
+			<div class = "container-fluid">
+				<section class="row  headerLogin">
+					<article class="col-xs-12">
+						<img src="resources/img/iconostema/logo.png">
+					</article>
+				</section>
+				<form method=""  name="formForget" id="formForget" >
+					<section class="row mT-lg">
+						<article class="col-xs-10 col-xs-offset-1">
+							<p>Ingresa tu correo electronico, te enviarmos una contraseña temporal para que puedas acceder y crees una nueva contraseña</p>
+						</article>
+					</section>
+					<section class="row mT-sm">
+						<article class="col-xs-8 col-xs-offset-2">
+							 <label class="fo" for="pwd">Correo</label>
+							<div class="input-group">
+							  <span class="input-group-addon" ><i class="fas fa-unlock-alt"></i></span>
+							  <input type="email" class="form-control" placeholder="Correo" id="email" name="email" autocomplete="off">
+							</div>
+						</article>
+					</section>
+					<section class="row mT-md mB-lg">
+						<article class="col-xs-12 text-center">
+							<button type="button" class="colorBtnSecondary mT-md" id="sendForget" >
+								Enviar <i class="fas fa-arrow-circle-right"></i>
+							</button>
+						</article>
+					</section>
+					<section class="row mB-lg">
+						<article class="col-xs-12 text-center">
+							<p class="h4" id="msjError"></p>
+						</article>
+					</section>
+				</form>
+			</div>
+			<a href="javascript:;" class="btnForgetPwd" id="opnLogin" >Iniciar Sesion</a>
+		</div>		
+	</div>
+</div>
+<script>
+	loadScript('src/views/Login/Login.js');
+</script>

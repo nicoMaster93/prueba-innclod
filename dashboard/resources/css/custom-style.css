@@ -1,0 +1,60 @@
+ul.lisImg {
+    border: 1px solid var(--colorPrimarioApp);
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+ul.lisImg li{
+    /* border: 1px solid; */
+    padding: 10px 5px;
+}
+ul.lisImg li:nth-child(odd){
+    background-color: var(--colorGrisClaro);
+}
+ul.lisImg li label {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+ul.lisImg li label input{
+    margin-left:10px;
+    margin-right:10px;
+}
+ul.lisImg li label img{
+    height: 80px;
+}
+.showSeccion{
+    transition: 1s;
+    position: relative;
+    height: auto;
+}
+.hideSeccion{
+    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+#modalBodyQR{
+    display: block;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+div#qrCode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div#qrCode canvas{
+    width:100%;
+}
+
+div#seriePedido {
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}

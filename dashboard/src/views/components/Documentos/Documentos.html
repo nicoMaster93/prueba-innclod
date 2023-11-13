@@ -1,0 +1,78 @@
+<!-- Modal del Formulario -->
+<div class="modal fade" id="modalForm" role="dialog">
+	<div class="modal-dialog modal-md">
+	  <div class="modal-content">
+		<form id="formView" enctype="multipart/form-data" >
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Formulario de documentos</h4>
+			</div>
+			<div class="modal-body">
+				<input type="hidden" name="docId" value="" id="docId" >
+				<section class="row mT-sm">
+				<article class=" col-sm-12">
+					<label for="nombre_doc" class="control-label">* Nombre del documento</label>
+					<input type="text" name="nombre_doc" id="nombre_doc" class="form-control" required>
+				</article>
+				</section>
+				<section class="row mT-sm">
+				<article class=" col-sm-6">
+					<label for="tipo_doc" class="control-label">* Tipo de documento</label>
+					<select name="tipo_doc" id="tipo_doc" class="form-control" required ></select>
+				</article>
+				<article class=" col-sm-6">
+					<label for="proceso_doc" class="control-label">* Procesdo del documento</label>
+					<select name="proceso_doc" id="proceso_doc" class="form-control" required></select>
+				</article>
+				</section>
+				<section class="row mT-sm">
+				<article class=" col-sm-12">
+					<label for="contenido_doc" class="control-label">* Contenido</label>
+					<textarea name="contenido_doc" id="contenido_doc" class="form-control" rows="4" required></textarea>
+				</article>
+				</section>
+			</div>
+			<div class="modal-footer"> 
+			  <button type="button" class="btn btn-danger" id="cancelForm" >Cancelar</button>
+			  <button type="submit" class="btn btn-primary" id="saveForm" >Guardar</button>
+			</div>
+		</form>
+	  </div>
+	</div>
+</div>
+<!-- Grilla -->
+<main class="view">
+	<section class="row " style="margin-top: 20px;">
+		<article class="col-sm-12">
+			<button id="newRegister" class="btn btn-primary">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+				Nuevo Registro
+			</button>
+		</article>
+	</section>
+	<section class="row " style="margin-top: 20px;">
+		<article class="col-sm-12">
+			<h4>Listado de Documentos</h4>
+			<div class="table-responsive" >
+			<table id="tbla-consulta" cellspacing="0" >
+				<thead>
+					<tr>
+						<th>Opciones</th>
+						<th>Código</th>
+						<th>Documento</th>
+						<th>Contenido</th>
+						<th>Tipo Documento</th>
+						<th>Proceso</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+			</div>
+		</article>
+	  </section>
+</main>
+<script>
+	loadScript('src/views/components/Documentos/Documentos.js');
+</script>

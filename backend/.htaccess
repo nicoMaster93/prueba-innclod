@@ -1,0 +1,17 @@
+
+        # activa el motor de reescritura
+
+        RewriteEngine On
+
+        # Redirigir vistas específicas a index.html
+
+        RewriteRule ^([a-zA-Z0-9=/|_-]+)/([a-zA-Z0-9=/|_-]+)$ index.php?endpoint=$1&action=$2 [QSA,L]
+
+        # valida si el archivo solicitado no existe en el sistema
+
+        RewriteCond %{REQUEST_FILENAME} !-f
+
+        # valida si el archivo solicitado no existe como un directorio
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        
